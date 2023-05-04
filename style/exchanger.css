@@ -1,10 +1,10 @@
 .exchanger__fieldset {
-    border: 5px rgb(128, 128, 128) solid;
-
+    border: none;
+background-color: #0f162070;
 }
 
 .exchanger__legend {
-    background-color: #2a6b3da8;
+    background-color: #132433;
     padding: 10px;
     color: white;
     box-shadow: -6px -6px 8px 1px rgba(0, 0, 0, 0.595);
@@ -17,7 +17,7 @@
     width: 100%;
     display: inline-block;
     margin: 15px 5px;
-    color: #000000;
+    color: white;
 }
 
 .exchanger__field {
@@ -28,7 +28,8 @@
 }
 
 .exchanger__field--otherColor {
-    background-color: #2a6b3d1f;
+    background-color: #1e3547;
+    color: white;
 }
 
 .exchanger__field:required {
@@ -43,4 +44,9 @@
 
 .exchanger__labelText--indent {
     margin-right: -65px;
+}
+
+.exchanger_bottomField {
+    background-color: #132433;
+    border-bottom: solid #acc6d5;
 }
