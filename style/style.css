@@ -1,0 +1,15 @@
+.html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    max-width: 1000px;
+   padding-top: 30px;
+    margin: 0 auto;
+    background-color: #91d0914c;
+}
