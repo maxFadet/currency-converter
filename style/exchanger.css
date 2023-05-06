@@ -42,11 +42,8 @@ background-color: #0f162070;
     margin-left: 10px;
 }
 
-.exchanger__labelText--indent {
-    margin-right: -65px;
-}
-
 .exchanger_bottomField {
     background-color: #132433;
     border-bottom: solid #acc6d5;
+    display: flex;
 }
