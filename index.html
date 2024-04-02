@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/script.js"></script>
+    <link href="style/container.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/exchanger.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta property="og:image" content="image/walutomat-share.png">
+    <link rel="icon" href="image/walutomat-favicon.png">
+    <title>Kalkulator walutowy</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <form class="exchanger js-form">
+            <fieldset class="exchanger__fieldset">
+                <legend class="exchanger__legend"><span class>Kalkulator walutowy</span><img class="exchanger__image"
+                        src="https://i.postimg.cc/nh2vgf08/portfel.png" alt="wallet"></legend>
+                <p>
+                    <label>
+                        <span class="exchanger__labelText">Wymieniam</span>
+                        <input class="exchanger__field js-amount" name="cash" type="number" placeholder="kwota" autofocus required>
+                    </label>
+                </p>
+                <p>
+                    <label><span class="exchanger__labelText"></span>
+                        <select class="exchanger__field js-currencyFrom" name="currencyHave">
+                            <option value="1">PLN</option>
+                            <option value="4.17">USD</option>
+                            <option value="4.59">EUR</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <lebel>
+                        <span class="exchanger__labelText">Na</span>
+                        <select class="exchanger__field exchanger__field--otherColor js-currencyTo" name="currencyGet">
+                            <option value="1">PLN</option>
+                            <option value="4.17">USD</option>
+                            <option value="4.59" selected>EUR</option>
+                        </select>
+                    </lebel>
+                </p>
+
+            </fieldset>
+            <p class="exchanger__bottomField">
+                <span class="exchanger__labelText">Otrzymam:</span>
+                <strong class="exchanger__labelText js-result">0.00</strong>
+                <span class="exchanger__labelText js-resultCurrency"></span>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
