@@ -42,7 +42,7 @@ background-color: #0f162070;
     margin-left: 10px;
 }
 
-.exchanger_bottomField {
+.exchanger__bottomField {
     background-color: #132433;
     border-bottom: solid #acc6d5;
     display: flex;
