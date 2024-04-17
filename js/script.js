@@ -1,31 +1,45 @@
-let formElement = document.querySelector(".js-form");
-let moneyElement = document.querySelector(".js-amount");
-let currencyElementFrom = document.querySelector(".js-currencyFrom");
-let currencyElementTo = document.querySelector(".js-currencyTo");
-let answerElement = document.querySelector(".js-result");
-let resultCurrency = document.querySelector(".js-resultCurrency");
+{
 
-formElement.addEventListener("input", () => {
+    const сharacterLimit = () => {
 
-    // Limit input to 13 characters
-    
-    let maxLength = 13;
-    let inputValue = moneyElement.value;
-    if (inputValue.length > maxLength) {
-        moneyElement.value = inputValue.slice(0, maxLength);
-    }
+        const moneyElement = document.querySelector(".js-amount");
+        const maxLength = 13;
+        moneyElement.value = moneyElement.value > maxLength ? moneyElement.value.slice(0, maxLength) : moneyElement.value;
 
-    // Recalculation operation
+    };
 
-    let money = moneyElement.value;
-    let currencyFrom = currencyElementFrom.value;
-    let currencyTo = currencyElementTo.value;
-    let result = (money * currencyFrom) / currencyTo;
+    const attachCharacterLimitListener = () => {
+        const moneyElement = document.querySelector(".js-amount");
+        moneyElement.addEventListener("input", сharacterLimit)
 
-    answerElement.innerText = result.toFixed(2);
+    };
 
-    // Shows the exchange currency
+    attachCharacterLimitListener();
 
-    let selectedCurrency = currencyElementTo.selectedOptions[0].textContent;
-    resultCurrency.innerText = selectedCurrency;
-});
+    const updateCurrencyConversionResult = () => {
+
+        const moneyElement = document.querySelector(".js-amount");
+        const currencyElementFrom = document.querySelector(".js-currencyFrom");
+        const currencyElementTo = document.querySelector(".js-currencyTo");
+        const answerElement = document.querySelector(".js-result");
+        const resultCurrency = document.querySelector(".js-resultCurrency");
+
+        const money = moneyElement.value;
+        const currencyFrom = currencyElementFrom.value;
+        const currencyTo = currencyElementTo.value;
+        const result = (money * currencyFrom) / currencyTo;
+        answerElement.innerText = result.toFixed(2);
+
+        const selectedCurrency = currencyElementTo.selectedOptions[0].textContent;
+        resultCurrency.innerText = selectedCurrency;
+    };
+
+    const initializeApp = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("input", updateCurrencyConversionResult);
+
+    };
+
+    initializeApp();
+
+};
