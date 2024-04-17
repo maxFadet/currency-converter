@@ -23,13 +23,21 @@ The code is written in accordance with the BEM convention.
 
 This result was achieved using this part of the code in JavaScript:
 ```javascript
-// Limit input to 13 characters
-    
-    let maxLength = 13;
-    let inputValue = moneyElement.value;
-    if (inputValue.length > maxLength) {
-        moneyElement.value = inputValue.slice(0, maxLength);
-    }
+    const сharacterLimit = () => {
+
+        const moneyElement = document.querySelector(".js-amount");
+        const maxLength = 13;
+        moneyElement.value = moneyElement.value > maxLength ? moneyElement.value.slice(0, maxLength) : moneyElement.value;
+
+    };
+
+    const attachCharacterLimitListener = () => {
+        const moneyElement = document.querySelector(".js-amount");
+        moneyElement.addEventListener("input", сharacterLimit)
+
+    };
+
+    attachCharacterLimitListener();
 ```
 
 3. Responsiveness of the page is demonstrated here:
