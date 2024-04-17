@@ -10,9 +10,9 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
     max-width: 700px;
     height: 100vh;
-   padding-top: 30px;
+    padding-top: 30px;
     margin: 0 auto;
     background-image: url("../image/currency-theme.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
