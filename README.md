@@ -1,5 +1,5 @@
 # Hello and welcome to my currency calculator
-Link to my [Currency calculator](https://maxfadet.github.io/currency_calculator/)
+Link to my [Currency calculator](https://maxfadet.github.io/currency-converter/)
 
 And also my  [git hub page](https://github.com/maxFadet/currency_calculator)
 
