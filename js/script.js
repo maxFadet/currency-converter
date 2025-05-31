@@ -1,5 +1,4 @@
 {
-
     const сharacterLimit = (moneyElement) => {
         
         const maxLength = 13;
