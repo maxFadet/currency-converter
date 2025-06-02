@@ -10,7 +10,6 @@
         moneyElement.addEventListener("input", () => {
             сharacterLimit(moneyElement);
         });
-
     };
 
     attachCharacterLimitListener();
