@@ -20,7 +20,6 @@
         const currencyElementTo = document.querySelector(".js-currencyTo");
         const answerElement = document.querySelector(".js-result");
         const resultCurrency = document.querySelector(".js-resultCurrency");
-
         const money = moneyElement.value;
         const currencyFrom = currencyElementFrom.value;
         const currencyTo = currencyElementTo.value;
