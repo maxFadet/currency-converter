@@ -25,7 +25,6 @@
         const currencyTo = currencyElementTo.value;
         const result = (money * currencyFrom) / currencyTo;
         answerElement.innerText = result.toFixed(2);
-
         const selectedCurrency = currencyElementTo.selectedOptions[0].textContent;
         resultCurrency.innerText = selectedCurrency;
     };
