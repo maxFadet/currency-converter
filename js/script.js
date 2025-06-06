@@ -32,7 +32,6 @@
     const initializeApp = () => {
         const formElement = document.querySelector(".js-form");
         formElement.addEventListener("input", updateCurrencyConversionResult);
-
     };
 
     initializeApp();
