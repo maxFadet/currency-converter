@@ -1,6 +1,5 @@
 {
     const сharacterLimit = (moneyElement) => {
-        
         const maxLength = 13;
         moneyElement.value = moneyElement.value > maxLength ? moneyElement.value.slice(0, maxLength) : moneyElement.value;
     };
