@@ -5,7 +5,7 @@
     };
 
     const attachCharacterLimitListener = () => {
-        const moneyElement = document.querySelector(".js-amount");
+    const moneyElement = document.querySelector(".js-amount");
         moneyElement.addEventListener("input", () => {
             сharacterLimit(moneyElement);
         });
