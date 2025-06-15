@@ -33,5 +33,5 @@
         formElement.addEventListener("input", updateCurrencyConversionResult);
     };
     
-    initializeApp();
+initializeApp();
 };
