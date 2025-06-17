@@ -14,7 +14,7 @@
     attachCharacterLimitListener();
 
     const updateCurrencyConversionResult = () => {
-        const moneyElement = document.querySelector(".js-amount");
+    const moneyElement = document.querySelector(".js-amount");
         const currencyElementFrom = document.querySelector(".js-currencyFrom");
         const currencyElementTo = document.querySelector(".js-currencyTo");
         const answerElement = document.querySelector(".js-result");
